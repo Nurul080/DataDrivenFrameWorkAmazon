@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+
+	<groups>
+		<run>
+			<include name="Smoke"></include>
+		</run>
+	</groups>
+
+	<listeners>
+		<listener class-name="com.amazon.listeneers.AmazonListener"></listener>
+		
+	</listeners>
+
+	<test name="Smoke Test">
+		<classes>
+			<class name="com.amazon.registrationTest.RegistrationTest" />
+			<class name="com.amazon.registrationTest.RegistrationTest2" />
+		</classes>
+	</test>
+</suite>
